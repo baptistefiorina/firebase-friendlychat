@@ -5,6 +5,17 @@
   },
   "hosting": [
     {
+      "headers": [
+        {
+          "source": "**/*.@(js)",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/javascript"
+            }
+          ]
+        }
+      ],
       "source": ".",
       "ignore": [
         "firebase.json",
